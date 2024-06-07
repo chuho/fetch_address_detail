@@ -98,8 +98,8 @@
                             document.getElementById('city').value = result.regeocode.addressComponent.city;
                             document.getElementById('district').value = result.regeocode.addressComponent.district;
                             document.getElementById('street').value = street;
-                            document.getElementById('township').value = township;
-                            document.getElementById('towncode').value = towncode;
+                            document.getElementById('township').value = result.regeocode.addressComponent.township;
+                            document.getElementById('towncode').value = result.regeocode.addressComponent.towncode;
                         }else{
                             log.error('根据地址查询地址失败')
                         }
@@ -124,8 +124,8 @@
                         document.getElementById('city').value = result.regeocode.addressComponent.city;
                         document.getElementById('district').value = result.regeocode.addressComponent.district;
                         document.getElementById('street').value = street;
-                        document.getElementById('township').value = township;
-                        document.getElementById('towncode').value = towncode;
+                        document.getElementById('township').value = result.regeocode.addressComponent.township;
+                        document.getElementById('towncode').value = result.regeocode.addressComponent.towncode;
                     }else{
                         log.error('根据地址查询地址失败')
                     }
