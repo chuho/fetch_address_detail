@@ -45,7 +45,11 @@
     </div>
     <div class="input-item">
             <div class="input-item-prepend"><span class="input-item-text">村</span></div>
-            <input id='cun' disabled type="text">
+            <input id='township' disabled type="text">
+    </div>
+    <div class="input-item">
+            <div class="input-item-prepend"><span class="input-item-text">12位编码</span></div>
+            <input id='towncode' disabled type="text">
     </div>
     <input id="geo" type="button" class="btn" value="查询一下" />
     
@@ -94,7 +98,8 @@
                             document.getElementById('city').value = result.regeocode.addressComponent.city;
                             document.getElementById('district').value = result.regeocode.addressComponent.district;
                             document.getElementById('street').value = street;
-                            document.getElementById('township').value = cun;
+                            document.getElementById('township').value = township;
+                            document.getElementById('towncode').value = towncode;
                         }else{
                             log.error('根据地址查询地址失败')
                         }
@@ -119,6 +124,8 @@
                         document.getElementById('city').value = result.regeocode.addressComponent.city;
                         document.getElementById('district').value = result.regeocode.addressComponent.district;
                         document.getElementById('street').value = street;
+                        document.getElementById('township').value = township;
+                        document.getElementById('towncode').value = towncode;
                     }else{
                         log.error('根据地址查询地址失败')
                     }
